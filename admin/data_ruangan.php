@@ -59,9 +59,9 @@ $data = mysqli_query($koneksi, "SELECT * FROM ruangan ORDER BY id DESC");
             margin-top:10px;
         }
         img{
-            width:140px;  
-            height:100px;       
-            object-fit:cover;   
+            width:140px;        /* diperbesar */
+            height:100px;       /* tinggi tetap agar rapi */
+            object-fit:cover;   /* agar tidak gepeng */
             border-radius:10px;
             box-shadow:0 3px 10px rgba(0,0,0,0.15);
             transition:0.3s;

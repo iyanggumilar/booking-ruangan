@@ -226,7 +226,7 @@ th{
     <th>Ruangan</th>
     <th>Tanggal</th>
     <th>Jam</th>
-    <th>Aksi</th>
+    <!-- <th>Aksi</th> -->
 </tr>
 
 <?php 
@@ -239,12 +239,12 @@ while($b = mysqli_fetch_assoc($data_booking)){
     <td><?= $b['nama_ruangan'] ?></td>
     <td><?= $b['tanggal'] ?></td>
     <td><?= $b['jam_mulai'] ?> - <?= $b['jam_selesai'] ?></td>
-    <td>
+    <!-- <td>
         <a href="booking.php?hapus=<?= $b['id'] ?>" 
            onclick="return confirm('Yakin ingin menghapus booking ini?')">
             <button type="button" class="hapus-btn">Hapus</button>
         </a>
-    </td>
+    </td> -->
 </tr>
 <?php } ?>
 
